@@ -6,26 +6,42 @@
     <title>Portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 </head>
 <body>
 
     <!--header-->
-    <header>
+    <header class="active">
         <a href="#" class="logo">Walid.</a>
 
         <i class='bx bx-menu' id="menu-icon"></i>
 
         <nav>
             <a href="#" class="active">Home</a>
-            <a href="#">Services</a>
             <a href="#">Resume</a>
             <a href="#">Portfolio</a>
             <a href="#">Contact</a>
 
         </nav>
     </header>
+
+    <!--bars background-->
+    <div class="bars-box active">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+
+    </div>
+
+
     <!-- home section -->
-     <section class="home">
+     <section class="home active">
         <div class="home-detail">
             <h1>Ben Ayed Walid</h1>
             <h2>I'm a 
@@ -34,11 +50,11 @@
                 passionate about creating efficient, scalable, and user-friendly web solutions. I collaborate closely with clients to turn their ideas into innovative applications 
                 that solve real-world challenges. Let&apos;s bring your vision to life together!</p>
                 <div class="btn-sci">
-                    <a href="#" class="btn">Download CV</a>
+                    <a href="Cv Ben Ayed Walid.pdf" class="btn">Download CV</a>
                     <div class="sci">
-                        <a href="#"><i class='bx bxl-github'></i></a>
-                        <a href="#"><i class='bx bxl-linkedin'></i></a>
-                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                        <a href="https://github.com/walid-ben-ayed"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.linkedin.com/in/walid-ben-ayed-758b43223/"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://x.com/benayedwalid31"><i class='bx bxl-twitter' ></i></a>
 
                     </div>
                 </div>
@@ -52,6 +68,381 @@
         </div>
 
      </section>
+
+     <!-- resume section-->
+      <section class="resume">
+        <div class="resume-container">
+            <div class="resume-box">
+                <h2>Why Hire Me?</h2>
+                <p class="desc">Versatile software developer dedicated to solving challenges and delivering impactful, user-focused solutions.</p>
+                <button class="resume-btn active">Experience</button>
+                <button class="resume-btn">Education</button>
+                <button class="resume-btn">Skills</button>
+                <button class="resume-btn">About Me</button>
+            </div>
+
+            <div class="resume-box">
+
+                <div class="resume-detail experience active">
+                    <h2 class="heading">My <span>Experience</span></h2>
+                    <p class="desc">I specialize in building robust web applications, delivering secure, multilingual, and scalable solutions tailored to user needs.</p>
+                    <div class="resume-list">
+
+
+                        <div class="resume-item">
+                            <p class="year">PFE Internship: February 2024-May 2024</p>
+                            <h3>Full Stack Developer</h3>
+                            <p class="company">HTSOFT</p>
+                            <p>Development of an innovative website for quality
+                                management. This site integrates ISO standards, audit
+                                results, and centralizes data. It is multilingual and utilizes
+                                the following technologies: React, TypeScript, .NET, MySQL,
+                                and the Redux library.</p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p class="year">Freelance: December 2023-February 2024</p>
+                            <h3>Full Stack Developer</h3>
+                            <p class="company">Mammut Web Solutions</p>
+                            <p>I developed a website for this company, showcasing its services and integrating various 
+                                features such as an online application space. 
+                                Using React , .NET and MySQL technologies, 
+                                I ensured optimal performance and managed hosting on OVH servers.</p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p class="year">Summer internship: July 2023-August 2023</p>
+                            <h3>Full Stack Developer</h3>
+                            <p class="company">ECO-Cloud</p>
+                            <p>Developed a dynamic and user-friendly "To-Do" web application 
+                                utilizing the PERN stack (PostgreSQL, Express.js, React, Node.js). Designed to streamline 
+                                time management and task organization, the application empowers 
+                                users to effortlessly create, edit, and manage 
+                                their tasks with a seamless and intuitive interface.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="resume-detail education">
+                    <h2 class="heading">My <span>Education</span></h2>
+                    <p class="desc">Computer engineering graduate with a strong foundation in software development, database management, and system design.</p>
+
+                    <div class="resume-list">
+
+                        <div class="resume-item">
+                            <p class="year">2024-2027</p>
+                            <h3>Engineering Cycle in Computer Science</h3>
+                            <p class="company"> IIT - International Institute of Technology</p>
+                            <p>Completed an evening program in the Engineering Cycle in Computer Science 
+                                at the International Institute of Technology, 
+                                combining a rigorous academic curriculum with hands-on professional experience</p>        
+                        </div>
+
+
+                        <div class="resume-item">
+                            <p class="year">2021-2024</p>
+                            <h3>Licence in Computer Science</h3>
+                            <p class="company">Higher Institute of Computer Science and Multimedia of Sfax</p>
+                            <p>Earned a Bachelor's degree in Computer Science from the Higher Institute 
+                                of Computer Science and Multimedia of Sfax, equipping me with a strong foundation 
+                                in programming, software development, and database management.</p>        
+                        </div>
+
+
+                        <div class="resume-item">
+                            <p class="year">2020-2021</p>
+                            <h3>technical baccalaureate</h3>
+                            <p class="company">High School 25 Juillet 1957, Sfax   </p>
+                            <p>Earned a Technical Baccalaureate from High School 25 Juillet 1957, Sfax, 
+                                in 2020-2021, with an average of 13.65, 
+                                showcasing strong performance in applied sciences and technical studies.</p>        
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-detail skills">
+                    <h2 class="heading">My <span>Skills</span></h2>
+                    <p class="desc">Proficient in full-stack development, database management, and agile methodologies, with expertise in React, Express, .NET, and MySQL.</p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <i class='bx bxl-html5'></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-css3'></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-javascript' ></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-react' ></i>
+                            <span>ReactJS</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-nodejs'></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-spring-boot'></i>
+                            <span>Spring Boot</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-postgresql'></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-python'></i>
+                            <span>Python</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="resume-detail about">
+                    <h2 class="heading">About <span>Me</span></h2>
+                    <p class="desc">Dynamic and social professional, excelling in collaborative environments and building strong connections to achieve shared goals.</p>
+                    <div class="resume-list">
+
+                        <div class="resume-item">
+                            <p>Full Name <span>Walid Ben Ayed</span></p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p>Gender <span>Male</span></p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p>Age <span>22 Years Old</span></p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p>Status <span>Single</span></p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p>City <span>Sfax</span></p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p>Nationality <span>Tunisian</span></p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p>Experience <span>1 Years</span></p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p>Full Time <span>Available</span></p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p>Freelance <span>Available</span></p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p>Phone <span>(+216) 54 755 733</span></p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p>Email <span>benayedwalid31@gmail.com</span></p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p>Languages <span>Arabic, French, English</span></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+      </section>
+
+      <!-- portfolio section-->
+       <section class="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <div class="portfolio-detail active">
+                    <p class="numb">01</p>
+                    <h3>My-Car</h3>
+                    <p>I developed my-car, a car rental application, it offers a seamless 
+                        booking experience with detailed maps to simplify vehicle selection. With a 
+                        responsive interface and modern design, my-car aims 
+                        to provide an intuitive and efficient rental experience, redefining car rental services.</p>
+                        <div class="tech">
+                            <p>Next.js, React, TypeScript, Tailwind CSS</p>
+                        </div>
+                        <div class="live-github">
+                            <a href="https://github.com/walid-ben-ayed/my-car"><i class='bx bxl-github'></i><span>GitHub Repository</span></a>
+                        </div>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">02</p>
+                    <h3>Ciné Opinions</h3>
+                    <p>I developed Ciné Opinions, a web application designed to streamline movie 
+                        discovery and foster community interaction. The platform enables users to 
+                        search for movies, share reviews, and rate films through an intuitive and 
+                        user-friendly interface. CinéOpinions combines seamless navigation with robust features 
+                        to enhance the movie exploration and review experience.</p>
+                        <div class="tech">
+                            <p>Spring Boot, React, MongoDB</p>
+                        </div>
+                        <div class="live-github">
+                            <a href="https://github.com/walid-ben-ayed/CineOpinions"><i class='bx bxl-github'></i><span>GitHub Repository</span></a>
+                        </div>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">03</p>
+                    <h3>Jovich</h3>
+                    <p>I developed a dynamic e-commerce website specializing in fashionable 
+                        clothing brands. The platform delivers a seamless online shopping 
+                        experience with an intuitive design that enables users to browse, 
+                        select, and purchase trendy apparel effortlessly. Its user-focused 
+                        functionality is tailored to 
+                        enhance customer engagement and drive online sales.</p>
+                        <div class="tech">
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                        <div class="live-github">
+                            <a href="https://github.com/walid-ben-ayed/jovich"><i class='bx bxl-github'></i><span>GitHub Repository</span></a>
+                        </div>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">04</p>
+                    <h3>Kalmni</h3>
+                    <p>I developed Kalmni, an Android application that streamlines 
+                        access to psychotherapy services. The app features a secure and 
+                        intuitive platform for discovering and booking tailored therapy sessions. 
+                        With its user-friendly interface, Kalmni simplifies the process of connecting users to 
+                        mental health support, promoting well-being and accessibility.</p>
+                        <div class="tech">
+                            <p>Android Studio, Java</p>
+                        </div>
+                        <div class="live-github">
+                            <a href="https://github.com/walid-ben-ayed/kalmni"><i class='bx bxl-github'></i><span>GitHub Repository</span></a>
+                        </div>
+                </div>
+
+            </div>
+            <div class="portfolio-box">
+                <div class="portfolio-carousel">
+                    <div class="img-slide">
+                        <div class="img-item">
+                            <img src="images/1.png">
+                        </div>
+                        <div class="img-item">
+                            <img src="images/2.png">
+                        </div>
+                        <div class="img-item">
+                            <img src="images/3.png">
+                        </div>
+                        <div class="img-item">
+                            <img src="images/4.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    <button class="arrow-left disabled"><i class='bx bx-chevron-left'></i></button>
+                    <button class="arrow-right"><i class='bx bx-chevron-right' ></i></button>
+
+                </div>
+            </div>
+        </div>
+       </section>
+
+       <!--contact section-->
+       <section class="contact">
+        <div class="contact-container">
+            <!-- Left Column -->
+            <div class="contact-box">
+                <h2>Let's Work Together</h2>
+                <p class="desc">
+                    Feel free to reach out to discuss your projects or ideas. Together, we can bring your vision to life with creativity and expertise.
+                </p>
     
+                <div class="contact-detail">
+                    <i class='bx bx-phone'></i>
+                    <div class="detail">
+                        <p>Phone</p>
+                        <p>(+216) 54 755 733</p>
+                    </div>
+                </div>
+    
+                <div class="contact-detail">
+                    <i class='bx bxs-envelope'></i>
+                    <div class="detail">
+                        <p>Email</p>
+                        <p>benayedwalid31@gmail.com</p>
+                    </div>
+                </div>
+    
+                <div class="contact-detail">
+                    <i class='bx bxs-map'></i>
+                    <div class="detail">
+                        <p>Address</p>
+                        <p>Tunis Street km 4.5, Sfax, Tunisia</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Right Column -->
+             
+            <div class="contact-box">
+                <form id="contactForm" onsubmit="event.preventDefault(); sendMail();">
+                    <h2 class="heading">Contact <span>Me!</span></h2>
+                    <div class="field-box">
+                        <input type="text" id="name" name="name" placeholder="Full Name" required />
+                        <input type="email" id="email" name="email" placeholder="Email Address" required />
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required />
+                        <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            
+                <!-- Nouveau lien pour EmailJS -->
+                <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                <script>
+                    // Initialisation d'EmailJS avec le nouveau SDK
+                    emailjs.init("P8Bv9qWwD5Q3piRZ3");
+            
+                    // Fonction d'envoi d'email
+                    function sendMail() {
+                        const parms = {
+                            name: document.getElementById("name").value,
+                            email: document.getElementById("email").value,
+                            subject: document.getElementById("subject").value,
+                            message: document.getElementById("message").value,
+                        };
+            
+                        emailjs.send("service_cx39qdq", "template_owk5xxv", parms)
+                            .then(function (response) {
+                                alert("Email envoyé avec succès !");
+                                console.log("Réponse EmailJS :", response);
+                            })
+                            .catch(function (error) {
+                                alert("Erreur lors de l'envoi de l'e-mail : " + error.text);
+                                console.error("Erreur EmailJS :", error);
+                            });
+                    }
+                </script>
+            </div>
+            
+            
+        </div>
+    </section>
+    
+
+      <!--script js-->
+      <script src="js/script.js"></script>
 </body>
 </html>
