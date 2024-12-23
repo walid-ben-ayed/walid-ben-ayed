@@ -729,6 +729,11 @@ form button.btn:hover {
         font-size: 50%;
     }
 }
+@media screen and (max-width: 401px){
+    html{
+        font-size: 40%;
+    }
+}
 
 @media screen and (max-width: 400px){
     .home-detail,
